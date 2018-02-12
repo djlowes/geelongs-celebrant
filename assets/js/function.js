@@ -446,7 +446,7 @@ $(document).ready(function () {
 	/*-----------------------------------------------------------------------------------*/
 
 	var map;
-	var myLatlng = new google.maps.LatLng(51.507351,-0.127758); // Specify YOUR coordinates
+	var myLatlng = new google.maps.LatLng(-38.150096, 144.362065); // Specify YOUR coordinates
 
 	var MY_MAPTYPE_ID = 'custom_style';
 
@@ -462,7 +462,7 @@ $(document).ready(function () {
 
 
 	  var mapOptions = {
-		zoom: 16,
+		zoom: 8,
 		center: myLatlng,
 		disableDefaultUI: true,
 		scrollwheel: false,
