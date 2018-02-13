@@ -537,6 +537,10 @@ section.hero .content span {
 	font-size: 14px;
 	text-align: center;
 }
+.aboutme {
+	margin-right: 20%;
+	margin-left: 20%;
+}
 /* _____________________________________
 
    06. Story Area
@@ -848,7 +852,7 @@ color: #555;
 .rsvp .ico.black span.line {
 	background: #fff;
 }
-#contactform {
+#gform {
 	margin-top: 35px;
 }
 .rsvp .rsvp-box .form-control {

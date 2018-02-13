@@ -36,6 +36,16 @@
 <!-- Body Start -->
 <body>
 
+<!-- Facebook SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.12&appId=172008523393273&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <!-- Preloader  -->
 <div id="preloader"> <span class="heartbeat"><i class="fa fa-heart" aria-hidden="true"></i></span> </div>
 <!-- End Preloader  -->
@@ -116,21 +126,14 @@
         <p class="sub-head animation fadeInUp"> Congratulations on your decision to embrace wedded bliss. I understand the importance of capturing the essence of you, as a couple, and will make your wedding personalised and perfect. <br /> <i> ‘It’s your special day, so your special way’ </i>
         </p>
         <div class="couples">
-          <!-- <div class="heartico animation fadeInUp"> <i class="fa fa-heart-o" aria-hidden="true"></i></div> -->
-          <div class="col-md-6 col-sm-6 col-sm-12 groom animation delay1 fadeInLeft">
+          <div class="col-md-6 col-sm-6 col-sm-12 groom animation delay1 fadeInLeft" style="visibility: visible;padding-right: 0px;">
             <figure> <img class="img-circle" src="assets/images/me.png" alt=""></figure>
           </div>
-          <div class="col-md-6 col-sm-6 col-sm-12 bride animation delay1 fadeInRight">
-            <h3>Rosemary Friend - Geelong's Celebrant</h3>
-            <div class="content" >
-            <p>Hi! I am a licenced and certified marriage celebrant operating in the Geelong and Surf Coast area. I am known for my calm nature, humour and excellent organisation. I'm very flexible and absolutely committed to making your wedding wonderful. I endeavour to capture the essence of you as a couple and make it your day. I’d be happy and honoured to meet, obligation free, to discuss a personalised wedding ceremony with you, or you can call me on 0413 008 454.</p>
-            </div>
-            <!-- <figure> <img class="img-circle" src="assets/images/bride.png" alt=""></figure> -->
-            <!-- <div class="content">
-              <h3>Amy Jackson</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae dignissimos voluptate reprehenderit invetntore quis dicta, aliquam possimuenda</p>
-              <div class="social-icons"> <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a> <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a> </div>
-            </div> -->
+          <div class="col-md-6 col-sm-6 col-sm-12 bride animation delay1 fadeInRight" style="visibility: visible;padding-left: 0px;">
+            <h3 style="margin-top: 0px;">Rosemary Friend - Geelong's Celebrant</h3>
+            <div class="content">
+            <p>I am a registered marriage celebrant operating in the Geelong and Surf Coast area. I am known for my calm nature, humour and excellent organisation. I'm very flexible and absolutely committed to making your wedding wonderful. I endeavour to capture the essence of you as a couple and make it your day. I’d be happy to meet obligation free to discuss a personalised wedding ceremony with you.</p>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Frosemarygeelongscelebrant%2F&tabs=timeline&width=360&height=70&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=172008523393273" width="360" height="140" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
           </div>
         </div>
       </div>
@@ -166,7 +169,7 @@
               </div>
               <div class="item">
                 <h4>Conduct a rehearsal</h4>
-                <p> I am here for you for your rehearsal dinner and am committed to making sure your special day goes perfectly. </p>
+                <p> I am here for you for your rehearsal and am committed to making sure your special day goes perfectly. </p>
               </div>
               <div class="item">
                 <h4>On the day</h4>
@@ -190,14 +193,14 @@
         <h2 class="main-head">My Services</h2>
         <div class="ico black"> <span class="line"> </span> <span class="line line2"> </span> <i class="fa fa-heart" aria-hidden="true"></i> <span class="line line2"> </span> <span class="line"> </span> </div>
       </div>
-      <p class="sub-head"> I am a licenced and registered marriage celebrant in Geelong. I can also perform funeral services and host events. </p>
+      <p class="sub-head"> I am a registered marriage celebrant in Geelong. I can also perform funeral services and host events. </p>
       <div class="row-wedding">
         <div class="col-md-4 col-sm-6 col-xs-12">
           <div class="box">
             <figure><img class="img-responsive" src="assets/images/weddings.jpg" alt=""></figure>
             <div class="data">
               <h3>Weddings</h3>
-              <p>Mum - add content here and we need to find an image for above</p>
+              <p>I will officiate and celebrate your union in marriage</p>
             </div>
           </div>
         </div>
@@ -206,7 +209,7 @@
             <figure><img class="img-responsive" src="assets/images/funerals.jpg" alt=""></figure>
             <div class="data">
               <h3>Funerals</h3>
-              <p>Mum - add content here and we need to find an image for above</p>
+              <p>Funerals are always hard. I'm here to make it easier for you</p>
             </div>
           </div>
         </div>
@@ -215,7 +218,7 @@
             <figure><img class="img-responsive" src="assets/images/events.jpg" alt=""></figure>
             <div class="data">
               <h3>Events</h3>
-              <p>Mum - add content here and we need to find an image for above</p>
+              <p>Have an event? Need an MC? I can help!</p>
             </div>
           </div>
         </div>
@@ -259,28 +262,25 @@
       <p class="sub-head"> Please see photos of some of my ceremonies below </p>
       <div class="gallery-masonry zoom-gallery">
         <div class="col-md-4 col-sm-6 col-xs-6 item">
-          <a href="assets/images/gallery/1.png"> <img class="img-responsive" src="assets/images/gallery/1.png" alt="gallery"> </a>
+          <a href="assets/images/gallery/2.jpeg"> <img class="img-responsive" src="assets/images/gallery/2.jpeg" alt="gallery"> </a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6 item">
-         <a href="assets/images/gallery/2.jpeg"> <img class="img-responsive" src="assets/images/gallery/2.jpeg" alt="gallery"> </a>
+         <a href="assets/images/gallery/1.png"> <img class="img-responsive" src="assets/images/gallery/1.png" alt="gallery"> </a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6 item">
-         <a href="assets/images/gallery/3.png" title="Into The Blue"> <img class="img-responsive" src="assets/images/gallery/3.png" alt="gallery"> </a>
+         <a href="assets/images/gallery/3.png"> <img class="img-responsive" src="assets/images/gallery/3.png" alt="gallery"> </a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6 item">
-         <a href="assets/images/gallery/4.jpg" title="Into The Blue"> <img class="img-responsive" src="assets/images/gallery/4.jpg" alt="gallery"> </a>
+         <a href="assets/images/gallery/6.png"> <img class="img-responsive" src="assets/images/gallery/6.png" alt="gallery"> </a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6 item">
-         <a href="assets/images/gallery/5.png" title="Into The Blue"> <img class="img-responsive" src="assets/images/gallery/1.png" alt="gallery"> </a>
+         <a href="assets/images/gallery/4.jpg"> <img class="img-responsive" src="assets/images/gallery/4.jpg" alt="gallery"> </a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6 item">
           <a href="assets/images/gallery/5.png"> <img class="img-responsive" src="assets/images/gallery/5.png" alt="gallery"> </a>
         </div>
         <div class="col-md-4 col-sm-6 col-xs-6 item">
-          <a href="assets/images/gallery/7.png" title="Into The Blue"> <img class="img-responsive" src="assets/images/gallery/1.png" alt="gallery"> </a>
-        </div>
-        <div class="col-md-4 col-sm-6 col-xs-6 item">
-         <a href="assets/images/gallery/4.png" title="Into The Blue"> <img class="img-responsive" src="assets/images/gallery/1.png" alt="gallery"> </a>
+          <a href="assets/images/gallery/7.png"> <img class="img-responsive" src="assets/images/gallery/7.png" alt="gallery"> </a>
         </div>
       </div>
     </div>
@@ -303,17 +303,17 @@
             <h3><center>0413 008 454</center></h3>
             <div class="ico black"> <span class="line"> </span> <span class="line line2"> </span> <i class="fa fa-heart" aria-hidden="true"></i> <span class="line line2"> </span> <span class="line"> </span> </div>
           </div>
-          <form id="contactform" data-toggle="validator" class="shake scroll-reveal animation fadeInUp">
+          <form id="gform" data-toggle="validator" class="shake scroll-reveal animation fadeInUp" method="POST" action="https://script.google.com/macros/s/AKfycbyyg4Gvxb4zh7sVSaP0-xrUxUIPTcCiQL4re-1b772T9R0_vq1_/exec">
             <div class="form-group col-md-6 col-sm-6 col-xs-12">
-              <input type="text" class="form-control" id="name" placeholder="Your name" required data-error="Name missing">
+              <input type="text" class="form-control" id="name" placeholder="Your name" required data-error="Name missing" name="name">
               <div class="help-block with-errors"></div>
             </div>
             <div class="form-group col-md-6 col-sm-6 col-xs-12">
-              <input type="email" class="form-control" id="email" placeholder="Your email" required data-error="Email missing">
+              <input type="email" class="form-control" id="email" placeholder="Your email" required data-error="Email missing" name="email">
               <div class="help-block with-errors"></div>
             </div>
             <div class="form-group col-md-12">
-              <textarea name="message" id="message" class="form-control" rows="6" placeholder="Write your message here" required data-error="Message missing"></textarea>
+              <textarea name="message" id="message" class="form-control" rows="6" placeholder="Write your message here" required data-error="Message missing" name="message"></textarea>
               <div class="help-block with-errors"></div>
             </div>
             <div class="col-md-12 text-center">
@@ -339,6 +339,10 @@
           <h2 class="main-head">Testimonials</h2>
           <div class="ico black"> <span class="line"> </span> <span class="line line2"> </span> <i class="fa fa-heart" aria-hidden="true"></i> <span class="line line2"> </span> <span class="line"> </span> </div>
         </div>
+
+        <p class="sub-head"><i>"Thank you so much Rosie for being our Wedding Day Celebrant. You made us feel completely at ease and relaxed in your presence. We love your easy going nature and humour. You did the most incredible job and we had nothing but positive reviews from our guests. The ceremony was so beautiful, romantic, personal and heart-felt, it couldn’t have been more perfect. Words cannot express how grateful we are to you for making our Wedding Day complete and the fairytale dream that it was. Many, many thanks."</i></p>
+        <div class="ico black"><h6>Garret & Jenn</h6><span class="line"></span></div>
+
         <p class="sub-head"><i>"Rosemary is well spoken, fluent and great fun to know. She delights in making others happy and was mindful of putting our needs first. Rosemary is warm and has a delightful sense of humour. We highly recommend Rosemary as a wedding celebrant."</i></p>
         <div class="ico black"><h6>Julie & Geoff</h6><span class="line"></span></div>
 
@@ -348,8 +352,6 @@
         <p class="sub-head"><i>"Thanks Rosie. Our wedding was really special because you made sure it was what we wanted - simple, small and on the beach. You made us relaxed, made it fun and we are so happy with our day. It was perfect for us and our guests loved it."</i></p>
         <div class="ico black"><h6>Tammy & Glen</h6><span class="line"></span></div>
 
-        <p class="sub-head"><i>"Thank you so much Rosie for being our Wedding Day Celebrant. You made us feel completely at ease and relaxed in your presence. We love your easy going nature and humour. You did the most incredible job and we had nothing but positive reviews from our guests. The ceremony was so beautiful, romantic, personal and heart-felt, it couldn’t have been more perfect. Words cannot express how grateful we are to you for making our Wedding Day complete and the fairytale dream that it was. Many, many thanks."</i></p>
-        <div class="ico black"><h6>Garret & Jenn</h6><span class="line"></span></div>
           <!-- <div id="journal-slide">
             <div class="box">
               <figure><img src="assets/images/journal/1.png" alt=""></figure>
@@ -387,7 +389,8 @@
       <h4>Thank You</h4>
       <div class="ico"> <span class="line"> </span> <span class="line line2"> </span> <i class="fa fa-heart" aria-hidden="true"></i> <span class="line line2"> </span> <span class="line"> </span> </div>
       <h6>www.geelongscelebrant.com</h6>
-      <h3>0413 008 454</h3>
+      <h5><a href="mailto:me@geelongscelebrant.com?Subject=Hello%20Rosie!" target="_top">me@geelongscelebrant.com</a></h5>
+      <h3><a href="tel:0413-008-454">0413 008 454</h3>
     </div>
   </div>
   <div class="spacer"></div>
@@ -418,6 +421,7 @@
 <script type="text/javascript" src="assets/rsvp-form/js/form-scripts.js"></script>
 <!-- Custom Script -->
 <script src="assets/js/function.js"></script>
+<script src="assets/js/form-handler.js"></script>
 <!-- Particles -->
 <!--
    Creates a custom particles options and generating particle json
@@ -430,5 +434,6 @@ particlesJS.load('particles-js', 'assets/js/plugins/particles.json', function() 
   console.log('particles.js loaded - callback');
 });
 </script>
+
 </body>
 </html>
